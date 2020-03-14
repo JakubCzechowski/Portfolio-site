@@ -1,0 +1,57 @@
+.main-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0px -3px 14px 3px #c5c5c5;
+  padding: 5px;
+  background: #ffff;
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 955px;
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+    .main-nav {
+      display: flex;
+      width: 400px;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        width: stretch;
+        li {
+          ::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: #000;
+            transform-origin: bottom right;
+            transition: transform 0.20s ease-out;
+          }
+          :hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
+
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            position: relative;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

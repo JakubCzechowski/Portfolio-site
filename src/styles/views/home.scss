@@ -1,0 +1,14 @@
+.home-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .hej{
+    border:2px solid red;
+    width:955px;
+    height:400px;
+  }
+}
+
+
+//zrobic mozaike na jednej grafice od razu z napisem
+// lub zrobic mozaike i podzielic na dwa paski zeby sie łączyło (animacja wchodzenia)

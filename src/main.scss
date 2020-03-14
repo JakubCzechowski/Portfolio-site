@@ -1,0 +1,21 @@
+@import "styles/components/header.scss";
+@import "styles/components/footer.scss";
+@import "styles/views/home.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+html,
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+main{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+header+div{
+  flex:1;
+}
+
